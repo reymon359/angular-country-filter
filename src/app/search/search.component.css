@@ -1,0 +1,32 @@
+.fullwidth {
+  width: 100%;
+  padding-left: 30px;
+}
+
+.search {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+form {
+  margin-top: 4%;
+  margin-bottom: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+form .form-group input {
+  height: 50px;
+  font-size: 20px;
+}
+
+.searchbox-icon {
+  display: block;
+  position: absolute;
+  padding: 0;
+  margin: 15px
+}
