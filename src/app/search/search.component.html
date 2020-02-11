@@ -1,6 +1,6 @@
 <form [formGroup]="searchForm">
     <div class="form-group">
         <span class="searchbox-icon"><i class="fa fa-search"></i></span>
-        <input class="center-block fullwidth search" type="text" placeholder="Enter Country Name" required>
+        <input formControlName="searchCountry" class="center-block fullwidth search" type="text" placeholder="Enter Country Name" required>
     </div>
 </form>
