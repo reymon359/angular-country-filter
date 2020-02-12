@@ -11,5 +11,6 @@ export class DataService {
 
   changeCountryName(country: string) {
     // add data to an observable
+    this.countryNameSource.next(country);
   }
 }
