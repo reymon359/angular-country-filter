@@ -28,7 +28,7 @@ export class ListComponent implements OnInit {
     , "Turkey", "Turkmenistan", "Turks & Caicos", "Uganda", "Ukraine", "United Arab Emirates", "United Kingdom", "United States of America", "Uruguay", "Uzbekistan", "Venezuela", "Vietnam", "Virgin Islands (US)"
     , "Yemen", "Zambia", "Zimbabwe"]
 
-    // add the countries to be shown to this array
+  // add the countries to be shown to this array
   searchCountriesList: string[];
 
   constructor(private service: DataService) { }
@@ -36,6 +36,9 @@ export class ListComponent implements OnInit {
   ngOnInit() {
     this.service.currentCountryName.subscribe(name => {
       // complete this function which searches the countries using regex and adds them to searchCountriesList
+      if (name !== '') {
+        this.searchCountriesList = this.countries.filter(country => country.toLowerCase().includes(name.toLowerCase()));
+      }
     });
 
   }
